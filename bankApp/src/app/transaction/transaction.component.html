@@ -1,0 +1,18 @@
+<table>
+    <thead>
+<tr>
+    <td>Sl.No.</td>
+<td>Amount</td>
+<td>Type</td>
+</tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let transaction of transactions; let i=index;">
+            <td>{{i+1}}</td>
+            <td>{{transaction.amount}}</td>
+            <td>{{transaction.type}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<a class="home" routerLink="/dashboard">Home</a>
